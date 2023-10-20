@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './UserInput.css'
 
 const initialUserInput = {
   "current-savings": 10000,
@@ -22,7 +23,6 @@ export default function UserInput(props) {
   const submitHandler = (event) => {
     event.preventDefault();
     props.onAddInvestment(userInput);
-    console.log("userInput in UserInput: ", userInput);
   };
 
   const resetHandler = () => {
